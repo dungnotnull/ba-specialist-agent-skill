@@ -31,9 +31,9 @@
 
 **BA Specialist** is a production-grade agent skill that transforms any project brief into a comprehensive Business Analysis specification. Inspired by the **BMAD methodology** (Business, Management, Architecture, Development) and grounded in **IEEE 29148**, **IIBA BABOK v3**, and **Agile story mapping** practices, it guides an AI agent through six structured stages:
 
-`
+```
 Brief Intake → Stakeholder Mapping → Requirements Elicitation → Persona & Story Mapping → Gap Analysis → Quality Gate → Specification Document
-`
+```
 
 The result is a professional BA deliverable containing stakeholder registers, prioritized user stories with acceptance criteria, gap analysis, and a complete specification document ready for development teams.
 
@@ -55,7 +55,7 @@ Most software projects fail not from bad code, but from **bad requirements**. Am
 
 ## 🏗️ Architecture
 
-`
+```
 ┌─────────────────────────────────────────────────────────────────┐
 │                     /ba-specialist                              │
 │                    MAIN HARNESS ENTRY                            │
@@ -107,7 +107,7 @@ Most software projects fail not from bad code, but from **bad requirements**. Am
     │  │  📄 Full BA Specification Document      │   │
     │  └──────────────────────────────────────┘   │
     └──────────────────────────────────────────────┘
-`
+```
 
 ---
 
@@ -187,9 +187,9 @@ The quality gate in Stage 5 enforces **9 mandatory criteria** before the specifi
 
 **Score Calculation:**
 
-`
+```
 Quality Score = (INVEST × 0.30) + (MoSCoW × 0.20) + (Completeness × 0.30) + (Consistency × 0.20)
-`
+```
 
 **Fail/Retry Behavior:**
 
@@ -237,13 +237,14 @@ Automated pipeline that:
 python tools/knowledge_updater.py
 `
 
-**Fallback:** If crawl4ai is not installed, the script falls back to equests for HTTP-based crawling.
+**Fallback:** If crawl4ai is not installed, the script falls back to 
+equests for HTTP-based crawling.
 
 ---
 
 ## 📁 Project Structure
 
-`
+```
 ba-specialist-agent-skill/
 ├── 📄 CLAUDE.md                              # Skill identity, harness flow, integration notes
 ├── 📄 README.md                              # This file
@@ -262,7 +263,7 @@ ba-specialist-agent-skill/
 │   └── 📄 test-scenarios.md                  # 5 validation scenarios
 └── 📁 tools/
     └── 🐍 knowledge_updater.py               # ArXiv + web crawl pipeline
-`
+```
 
 ---
 
@@ -272,35 +273,35 @@ ba-specialist-agent-skill/
 
 Simply provide a project brief:
 
-`
+```
 /ba-specialist
 
 We're building an order management system for a mid-size e-commerce company.
 Customers place orders on our website; operations staff process and ship them.
 Currently everything is tracked in spreadsheets. We need a web app to streamline this.
-`
+```
 
 ### 2. For Vague Briefs
 
 The skill will **pause and ask clarifying questions** before proceeding:
 
-`
+```
 /ba-specialist
 
 We need an app.
-`
+```
 
 → The skill asks: "What problem does this app solve?", "Who are the primary users?", "What does success look like?"
 
 ### 3. For Process Improvement (Non-Software)
 
-`
+```
 /ba-specialist
 
 We need to redesign our vendor onboarding process. Currently it takes 6 weeks
 and involves 5 departments. We want to cut it to 2 weeks. No software is being
 built — this is a process improvement project.
-`
+```
 
 The skill **adapts its language** from software to process context automatically.
 
