@@ -1,0 +1,27 @@
+﻿# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Crawl cache
+tools/.seen_hashes.json
+
+# Temp files
+*.tmp
+*.bak

@@ -1,0 +1,83 @@
+﻿{
+    "version":  "1.0.0",
+    "skill":  "ba-specialist",
+    "crossSkillDependencies":  [
+                                   {
+                                       "cluster":  "A",
+                                       "alignmentNote":  "sub-stakeholder-mapper uses same Power/Interest Grid methodology as project-manager skill",
+                                       "skill":  "project-manager"
+                                   },
+                                   {
+                                       "cluster":  "A",
+                                       "alignmentNote":  "sub-quality-reviewer INVEST scoring pattern matches brand-recognition-auditor quality gate pattern",
+                                       "skill":  "brand-recognition-auditor"
+                                   }
+                               ],
+    "phases":  [
+                   {
+                       "phase":  0,
+                       "status":  "completed",
+                       "name":  "Research \u0026 Skill Architecture",
+                       "completedDate":  "2026-06-11"
+                   },
+                   {
+                       "phase":  1,
+                       "status":  "completed",
+                       "name":  "Core Sub-Skills",
+                       "completedDate":  "2026-06-15"
+                   },
+                   {
+                       "phase":  2,
+                       "status":  "completed",
+                       "name":  "Main Harness + Quality Gates",
+                       "completedDate":  "2026-06-15"
+                   },
+                   {
+                       "phase":  3,
+                       "status":  "completed",
+                       "name":  "SECOND-KNOWLEDGE-BRAIN Pipeline",
+                       "completedDate":  "2026-06-15"
+                   },
+                   {
+                       "phase":  4,
+                       "status":  "completed",
+                       "name":  "Testing \u0026 Validation",
+                       "completedDate":  "2026-06-15"
+                   },
+                   {
+                       "phase":  5,
+                       "status":  "completed",
+                       "name":  "Integration \u0026 Cross-Skill Wiring",
+                       "completedDate":  "2026-06-15"
+                   }
+               ],
+    "subSkills":  [
+                      {
+                          "shared":  false,
+                          "name":  "sub-stakeholder-mapper",
+                          "file":  "skills/sub-stakeholder-mapper.md"
+                      },
+                      {
+                          "shared":  false,
+                          "name":  "sub-requirements-gatherer",
+                          "file":  "skills/sub-requirements-gatherer.md"
+                      },
+                      {
+                          "shared":  false,
+                          "name":  "sub-persona-story-mapper",
+                          "file":  "skills/sub-persona-story-mapper.md"
+                      },
+                      {
+                          "shared":  false,
+                          "name":  "sub-gap-analyzer",
+                          "file":  "skills/sub-gap-analyzer.md"
+                      },
+                      {
+                          "shared":  false,
+                          "name":  "sub-quality-reviewer",
+                          "file":  "skills/sub-quality-reviewer.md"
+                      }
+                  ],
+    "folder":  2,
+    "status":  "completed"
+}
